@@ -1,0 +1,89 @@
+A. Known Bugs or Issues:
+1. If you have any known bugs or issues with your code, let us know here. If you are confident that your code is bug-free, also let us know.
+
+In the passing_grade function, the function couldn' handle negative numbers.
+In the grade_calculator function, the cfunction couldn't handle numbers with leading 0's.
+
+
+2. Give at least three test runs for each of the four functions you wrote. It’s fine if there are some issues with your code. We just need to make sure that you have tested your code with your own test cases, so don’t use the examples we have given to you. 
+
+>>> fahrenheit_to_celsius(75.5)
+24.166666666666668
+>>> fahrenheit_to_celsius(-10)
+-23.333333333333332
+>>> fahrenheit_to_celsius(100)
+37.77777777777778
+_____________________________________
+>>> passing_grade(89)
+True
+>>> passing_grade(-10)
+>>> passing_grade(8)
+False
+_____________________________________
+
+>>> grade_calculator(08)
+  File "<stdin>", line 1
+    grade_calculator(08)
+                      ^
+SyntaxError: leading zeros in decimal integer li
+terals are not permitted; use an 0o prefix for o
+ctal integers
+>>> grade_calculator(89)
+'B'
+>>> grade_calculator(0)
+'F'
+>>> grade_calculator(-1)
+'N/A'
+_____________________________________
+>>> integer_properties(15)
+Odd
+Positive
+>>> integer_properties(0.5)
+Odd
+Positive
+>>> integer_properties(0)
+Even
+Zero
+
+B. Questions:
+Q1:
+
+Code snippet A will only print one letter result, 
+whereas code snippet B can print up to 2 letter results.
+
+Q2:
+FUNC 1:
+if num%2 !=0:
+        print('Odd')
+    elif num%2 == 0:
+        print('Even')
+    if num>0:
+        print('Positive')
+    elif num<0:
+        print('Negative')
+    elif num==0:
+        print('Zero')
+VS:
+FUNC 2:
+if num%2 !=0:
+    print('Odd')
+elif num%2 == 0:
+    print('Even')
+if num>0:
+    print('Positive')
+elif num<0:
+    print('Negative')
+elif num==0:
+    print('Zero')
+
+In FUNC 1, if the first value is never emt then the rest of the code never executes, 
+however in FUNC 2, the rest of the code executes regardless of if the first condition is met.
+
+Q3:
+When a value is printed, it simply shows the human user a string representing what is going on inside the computer.
+The computer cannot make use of that printing.
+
+Return is how a function gives back a value. 
+This value is often unseen by the human user, but it can be used by the computer in further functions.
+In addition, a return value can stop the continuation of further functions down the line, whereas a print can not do this.
+
